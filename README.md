@@ -1,5 +1,5 @@
 # emacs
-emasc settings
+emacs settings
 
 ```shell
 $ git submodules init 
