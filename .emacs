@@ -36,7 +36,12 @@
 (require 'cl)
 (require 'package)
 
-(setq cfg-var:packages '(session git magit go-mode ido tabbar company flycheck yasnippet multi-compile go-eldoc company-go))
+(setq cfg-var:packages '(session
+			 git magit
+			 ido tabbar
+			 company flycheck yasnippet multi-compile
+			 go-mode go-eldoc company-go
+			 rust-mode racer flycheck-rust))
 
 (defun cfg:install-packages ()
   (let ((pkgs (remove-if #'package-installed-p cfg-var:packages)))
@@ -96,3 +101,4 @@
 (load-file "~/.elisp/rc-git.el")
 (load-file "~/.elisp/rc-keybindings.el")
 (load-file "~/.elisp/rc-golang.el")
+(load-file "~/.elisp/rc-rust.el")
