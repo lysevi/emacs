@@ -25,7 +25,7 @@
 (setq scroll-margin 10)
 
 ;(set-face-font 'default "7x14")
-(set-default-font "Terminal 14")
+;(set-default-font "Terminal 14")
 (show-paren-mode t)
 
 (column-number-mode 1)
