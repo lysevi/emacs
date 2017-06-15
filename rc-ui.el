@@ -47,7 +47,7 @@
 ;(server-start) ;;for emacsclient
 (which-function-mode)
 (setq display-time-day-and-date t)
-;;(display-time-mode)
+(display-time-mode)
 (blink-cursor-mode)
 
 ;; this means hitting the compile button always saves the buffer

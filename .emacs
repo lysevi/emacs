@@ -3,8 +3,6 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(ansi-color-faces-vector
-   [default default default italic underline success warning error])
  '(case-fold-search t)
  '(column-number-mode t)
  '(current-language-environment "UTF-8")
@@ -34,7 +32,6 @@
  '(scheme-program-name "mzscheme")
  '(scheme-programm-name "mzscheme" t)
  '(scroll-bar-mode (quote right))
- '(session-use-package t nil (session))
  '(show-paren-mode t nil (paren))
  '(size-indication-mode t)
  '(tags-add-tables t)
@@ -108,7 +105,6 @@
 
 (eshell)
 
-(load-file "~/.elisp/rc-ui.el")
 (load-file "~/.elisp/rc-functions.el")
 (load-file "~/.elisp/rc-git.el")
 (load-file "~/.elisp/rc-keybindings.el")
@@ -121,3 +117,5 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+
+(load-file "~/.elisp/rc-ui.el")
