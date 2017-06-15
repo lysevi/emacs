@@ -44,7 +44,7 @@
 
 (put 'narrow-to-region 'disabled nil)
 
-(server-start) ;;for emacsclient
+;(server-start) ;;for emacsclient
 (which-function-mode)
 (setq display-time-day-and-date t)
 ;;(display-time-mode)
