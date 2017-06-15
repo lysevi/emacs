@@ -1,4 +1,10 @@
 (custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(ansi-color-faces-vector
+   [default default default italic underline success warning error])
  '(case-fold-search t)
  '(column-number-mode t)
  '(current-language-environment "UTF-8")
@@ -18,6 +24,9 @@
  '(magit-save-some-buffers (quote dontask))
  '(mark-diary-entries-in-calendar t)
  '(mark-even-if-inactive t)
+ '(package-selected-packages
+   (quote
+    (yasnippet tabbar session racer multi-compile magit go-eldoc git flycheck-rust company-go cmake-mode)))
  '(py-python-command "ipython")
  '(python-python-command "python")
  '(quack-default-program "mzscheme")
@@ -25,6 +34,7 @@
  '(scheme-program-name "mzscheme")
  '(scheme-programm-name "mzscheme" t)
  '(scroll-bar-mode (quote right))
+ '(session-use-package t nil (session))
  '(show-paren-mode t nil (paren))
  '(size-indication-mode t)
  '(tags-add-tables t)
@@ -32,7 +42,9 @@
  '(transient-mark-mode t)
  '(which-function-mode nil nil (which-func)))
 
-(add-to-list 'load-path "~/.emacs.d/" "~/.elisp/packages")
+(add-to-list 'load-path "~/.elisp/packages")
+					;(add-to-list 'load-path "~/.emacs.d/elpa" "~/.elisp/packages")
+
 (require 'cl)
 (require 'package)
 
@@ -40,7 +52,7 @@
 			 git magit
 			 ido tabbar
 			 company flycheck yasnippet multi-compile
-			 go-mode go-eldoc company-go
+			 go-mode go-eldoc company-go cmake-mode
 			 rust-mode racer flycheck-rust))
 
 (defun cfg:install-packages ()
@@ -102,3 +114,10 @@
 (load-file "~/.elisp/rc-keybindings.el")
 (load-file "~/.elisp/rc-golang.el")
 (load-file "~/.elisp/rc-rust.el")
+
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
